@@ -419,5 +419,6 @@
       "role": "section",
       "position": "top"
     }
-  ]
+  ],
+  "navigation": "top"
 }
