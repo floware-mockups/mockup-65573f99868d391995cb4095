@@ -1,0 +1,414 @@
+{
+  "title": "Monitoraggio delle sedi vacanti",
+  "description": "Prototipo per consultare sedi vacanti, date di pubblicazione e tempi di aggiornamento, con riepiloghi per regione, provincia e classe. Dati interamente inventati; i ritardi sono indicatori informativi e non attestano inadempienze.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "quadro-generale",
+      "title": "Quadro generale",
+      "description": "Panoramica delle sedi registrate e dei tempi trascorsi dall’ultimo avviso. Usa i filtri della tabella per esplorare i dati.",
+      "metrics": [
+        {
+          "label": "Sedi monitorate",
+          "value": "128"
+        },
+        {
+          "label": "Sedi vacanti",
+          "value": "24"
+        },
+        {
+          "label": "Oltre 120 giorni",
+          "value": "7"
+        },
+        {
+          "label": "Avvisi recenti",
+          "value": "11"
+        },
+        {
+          "label": "Regioni simulate",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Sede",
+        "Comune",
+        "Provincia",
+        "Regione",
+        "Classe",
+        "Stato",
+        "Ultimo avviso",
+        "Giorni trascorsi"
+      ],
+      "rows": [
+        [
+          "Vallechiara",
+          "Luminara",
+          "AL",
+          "Aurora",
+          "A",
+          "Vacante",
+          "12/02/2025",
+          "146"
+        ],
+        [
+          "Boscoalto",
+          "Nubivento",
+          "BR",
+          "Boreale",
+          "B",
+          "Vacante",
+          "20/03/2025",
+          "110"
+        ],
+        [
+          "Pietrasole",
+          "Velafosca",
+          "CM",
+          "Cobalto",
+          "A",
+          "Vacante",
+          "01/11/2024",
+          "249"
+        ],
+        [
+          "Rivadoro",
+          "Luminara",
+          "AL",
+          "Aurora",
+          "C",
+          "Vacante",
+          "05/06/2025",
+          "33"
+        ],
+        [
+          "Fontequieta",
+          "Nubivento",
+          "BR",
+          "Boreale",
+          "B",
+          "Coperta",
+          "18/04/2025",
+          "75"
+        ],
+        [
+          "Montebruma",
+          "Serralume",
+          "DN",
+          "Dorata",
+          "C",
+          "Vacante",
+          "08/01/2025",
+          "181"
+        ],
+        [
+          "Campoluce",
+          "Velafosca",
+          "CM",
+          "Cobalto",
+          "B",
+          "Vacante",
+          "14/02/2025",
+          "144"
+        ],
+        [
+          "Lagochiaro",
+          "Serralume",
+          "DN",
+          "Dorata",
+          "A",
+          "Coperta",
+          "09/05/2025",
+          "54"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "sedi-vacanti",
+      "title": "Sedi vacanti",
+      "description": "Elenco filtrabile delle sedi vacanti e delle pubblicazioni disponibili. Ricerca e filtri della tabella sono distinti dal modulo di inserimento.",
+      "metrics": [
+        {
+          "label": "Risultati iniziali",
+          "value": "24"
+        },
+        {
+          "label": "Oltre 120 giorni",
+          "value": "7"
+        }
+      ],
+      "columns": [
+        "Sede",
+        "Comune",
+        "Provincia",
+        "Regione",
+        "Classe",
+        "Stato",
+        "Ultimo avviso",
+        "Giorni trascorsi"
+      ],
+      "rows": [
+        [
+          "Vallechiara",
+          "Luminara",
+          "AL",
+          "Aurora",
+          "A",
+          "Vacante",
+          "12/02/2025",
+          "146"
+        ],
+        [
+          "Boscoalto",
+          "Nubivento",
+          "BR",
+          "Boreale",
+          "B",
+          "Vacante",
+          "20/03/2025",
+          "110"
+        ],
+        [
+          "Pietrasole",
+          "Velafosca",
+          "CM",
+          "Cobalto",
+          "A",
+          "Vacante",
+          "01/11/2024",
+          "249"
+        ],
+        [
+          "Rivadoro",
+          "Luminara",
+          "AL",
+          "Aurora",
+          "C",
+          "Vacante",
+          "05/06/2025",
+          "33"
+        ],
+        [
+          "Montebruma",
+          "Serralume",
+          "DN",
+          "Dorata",
+          "C",
+          "Vacante",
+          "08/01/2025",
+          "181"
+        ],
+        [
+          "Campoluce",
+          "Velafosca",
+          "CM",
+          "Cobalto",
+          "B",
+          "Vacante",
+          "14/02/2025",
+          "144"
+        ]
+      ],
+      "form": [
+        "Sede",
+        "Comune",
+        "Provincia",
+        "Regione",
+        "Classe",
+        "Stato",
+        "Ultimo avviso",
+        "Giorni trascorsi"
+      ]
+    },
+    {
+      "id": "tempi-per-regione",
+      "title": "Tempi per regione",
+      "description": "Confronta i tempi simulati di pubblicazione per regione e classe. La graduatoria è descrittiva e non costituisce una valutazione ufficiale.",
+      "metrics": [
+        {
+          "label": "Regioni simulate",
+          "value": "5"
+        },
+        {
+          "label": "Media giorni",
+          "value": "112"
+        },
+        {
+          "label": "Soglia osservativa",
+          "value": "120"
+        }
+      ],
+      "columns": [
+        "Regione",
+        "Provincia",
+        "Classe",
+        "Sedi vacanti",
+        "Giorni medi",
+        "Massimo giorni",
+        "Oltre soglia",
+        "Indicatore"
+      ],
+      "rows": [
+        [
+          "Aurora",
+          "AL",
+          "A",
+          "4",
+          "92",
+          "146",
+          "1",
+          "Da verificare"
+        ],
+        [
+          "Aurora",
+          "AL",
+          "C",
+          "2",
+          "33",
+          "48",
+          "0",
+          "Tempi brevi"
+        ],
+        [
+          "Boreale",
+          "BR",
+          "B",
+          "5",
+          "110",
+          "119",
+          "0",
+          "Tempi brevi"
+        ],
+        [
+          "Cobalto",
+          "CM",
+          "A",
+          "3",
+          "249",
+          "249",
+          "2",
+          "Ritardo da verificare"
+        ],
+        [
+          "Cobalto",
+          "CM",
+          "B",
+          "4",
+          "144",
+          "181",
+          "2",
+          "Ritardo da verificare"
+        ],
+        [
+          "Dorata",
+          "DN",
+          "C",
+          "3",
+          "181",
+          "181",
+          "1",
+          "Ritardo da verificare"
+        ]
+      ],
+      "form": [
+        "Regione",
+        "Provincia",
+        "Classe",
+        "Sedi vacanti",
+        "Giorni medi",
+        "Massimo giorni",
+        "Oltre soglia",
+        "Indicatore"
+      ]
+    },
+    {
+      "id": "vicesegretari",
+      "title": "Comuni con vicesegretario",
+      "description": "Registro dimostrativo per annotare autorizzazioni associate a piccoli comuni. La verifica documentale e l’aggiornamento dei dati restano a cura degli operatori.",
+      "metrics": [
+        {
+          "label": "Comuni registrati",
+          "value": "6"
+        },
+        {
+          "label": "Autorizzazioni attive",
+          "value": "4"
+        },
+        {
+          "label": "Da verificare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Comune",
+        "Provincia",
+        "Regione",
+        "Classe",
+        "Stato autorizzazione",
+        "Data autorizzazione"
+      ],
+      "rows": [
+        [
+          "Luminara",
+          "AL",
+          "Aurora",
+          "C",
+          "Attiva",
+          "10/01/2025"
+        ],
+        [
+          "Nubivento",
+          "BR",
+          "Boreale",
+          "C",
+          "Da verificare",
+          "22/02/2025"
+        ],
+        [
+          "Velafosca",
+          "CM",
+          "Cobalto",
+          "C",
+          "Attiva",
+          "04/03/2025"
+        ],
+        [
+          "Serralume",
+          "DN",
+          "Dorata",
+          "C",
+          "Attiva",
+          "16/03/2025"
+        ],
+        [
+          "Pianofilo",
+          "EP",
+          "Edera",
+          "C",
+          "Da verificare",
+          "27/04/2025"
+        ],
+        [
+          "Rivadoro",
+          "AL",
+          "Aurora",
+          "C",
+          "Attiva",
+          "09/05/2025"
+        ]
+      ],
+      "form": [
+        "Comune",
+        "Provincia",
+        "Regione",
+        "Classe",
+        "Stato autorizzazione",
+        "Data autorizzazione"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "bordeaux-oro",
+    "fonts": "classico"
+  }
+}
