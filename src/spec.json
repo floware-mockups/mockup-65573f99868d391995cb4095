@@ -410,5 +410,14 @@
   "theme": {
     "palette": "bordeaux-oro",
     "fonts": "classico"
-  }
+  },
+  "custom": [
+    {
+      "name": "FiltroRegioni",
+      "title": "Filtro per regione",
+      "description": "Vista filtrata con le regioni presenti nei dati della pagina.",
+      "role": "section",
+      "position": "top"
+    }
+  ]
 }
